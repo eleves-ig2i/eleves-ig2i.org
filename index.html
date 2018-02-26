@@ -89,6 +89,15 @@
 				</p>
 				<ul>
 					<li>un fichier <span class="code">README.md</span> qui expliquera brièvement en quoi consiste le dépôt ;</li>
+					<li>
+						un fichier <span class="code">.travis.yml</span> initialisé avec la configuration suivante :
+						<div class="code">
+							<p>script:</p>
+							<p>&nbsp;&nbsp;- npm install linteverything@latest</p>
+							<p>&nbsp;&nbsp;- printf "module.exports={ignore:['node_modules','package-lock.json','.git','.travis.yml'],verbose:true};" > .linteverythingrc.js</p>
+							<p>&nbsp;&nbsp;- node ./node_modules/linteverything/bin/linteverything.js</p>
+						</div>
+					</li>
 					<li>les sources.</li>
 				</ul>
 				<p>
@@ -99,11 +108,10 @@
 					<li>le compte-rendu du TP, TD, CTP ou projet, nommé comme suit : <span class="code">${nom du dépôt}-cr.(txt|pdf)</span>.</li>
 				</ul>
 				<p>
-					Par ailleurs, il est encouragé d'ajouter les fichiers suivants :
+					Par ailleurs, il est encouragé d'ajouter le fichier suivant :
 				</p>
 				<ul>
-					<li><span class="code">.gitignore</span> : permet <a href="https://github.com/github/gitignore#a-collection-of-gitignore-templates">d'ignorer</a> certains fichiers ;</li>
-					<li><span class="code">.travis.yml</span> : permet de lancer un build <a href="https://docs.travis-ci.com/">Travis</a> et tester la validité du code.</li>
+					<li><span class="code">.gitignore</span> : permet <a href="https://github.com/github/gitignore#a-collection-of-gitignore-templates">d'ignorer</a> certains fichiers.</li>
 				</ul>
 
 

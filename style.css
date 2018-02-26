@@ -30,6 +30,10 @@ p, #content ul {
 	margin-right: 1em;
 }
 
+.code p {
+	margin-top: 0;
+}
+
 a {
 	color: #44d;
 }
