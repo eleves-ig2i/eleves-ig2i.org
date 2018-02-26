@@ -5,7 +5,8 @@ module.exports = {
 		'.git',
 		'.travis.yml',
 		'icon-144.png',
-		'LICENSE'
+		'LICENSE',
+		'CNAME'
 	],
 	verbose: true
 };
