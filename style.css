@@ -30,7 +30,7 @@ p, #content ul {
 	margin-right: 1em;
 }
 
-.code p {
+p.code {
 	margin-top: 0;
 }
 
@@ -42,6 +42,7 @@ a {
 	color: #44d;
 	font-family: Consolas, monospace;
 	white-space: nowrap;
+	overflow: auto;
 }
 
 body {

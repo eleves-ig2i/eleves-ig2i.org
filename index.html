@@ -91,12 +91,12 @@
 					<li>un fichier <span class="code">README.md</span> qui expliquera brièvement en quoi consiste le dépôt ;</li>
 					<li>
 						un fichier <span class="code">.travis.yml</span> initialisé avec la configuration suivante :
-						<div class="code">
-							<p>script:</p>
-							<p>&nbsp;&nbsp;- npm install linteverything@latest</p>
-							<p>&nbsp;&nbsp;- printf "module.exports={ignore:['node_modules','package-lock.json','.git','.travis.yml'],verbose:true};" > .linteverythingrc.js</p>
-							<p>&nbsp;&nbsp;- node ./node_modules/linteverything/bin/linteverything.js</p>
-						</div>
+						<p class="code">
+							script:<br/>
+							&nbsp;&nbsp;- npm install linteverything@latest<br/>
+							&nbsp;&nbsp;- printf "module.exports={ignore:['node_modules','package-lock.json','.git','.travis.yml'],verbose:true};" > .linteverythingrc.js<br/>
+							&nbsp;&nbsp;- node ./node_modules/linteverything/bin/linteverything.js
+						</p>
 					</li>
 					<li>les sources.</li>
 				</ul>
